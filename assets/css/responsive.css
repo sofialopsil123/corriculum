@@ -1,0 +1,147 @@
+.layout_menu-toggle{
+    display: none;
+
+}
+
+@media(max-width:1490px){
+    .body{
+        padding: 0;
+    }
+    .layout{
+        min-width:auto;
+        width:85%;
+    }
+
+}
+
+@media (max-width:1320px){
+    .layout{
+        width:89%;
+        margin-left: 3rem;
+
+    }
+   
+
+}
+
+@media(max-width:1160px){
+    .layout{
+        width:85%;
+        margin-left: 4rem;
+
+    }
+
+    .certificates__certificate{
+        flex-wrap: 100%;
+    }
+    }
+
+@media(max-width:1060px){
+    .body{
+        background-image: none;
+        position:static;
+    }
+
+    .layout{
+        width:100%;
+        height: 100%;
+        min-height: 100%;
+        margin:0;
+        border-radius: 0;
+
+        grid-template-areas: 'content';
+        grid-template-columns: 100%;
+    }
+
+    .layout_menu-toggle{
+        z-index: 9999;
+        display:none;
+        position:absolute;
+        right: 1rem;
+        top:1rem;
+        width:4.8rem;
+        height: 4.8rem;
+        line-height: 4.8rem;
+        font-size: 2.5rem;
+        text-align: center  ;
+        background-color: var(--color-secondary);
+        color: var(--color-principal);
+        border-radius: 3rem;
+        cursor: pointer;
+        transition: all 500ms ease-in-out;
+
+    }
+    /* 
+
+    coneste ocdigo el menu de hamburguesa se va ver visble ocn click o invisible 
+ */
+ 
+
+ .menu-toggle__icon{
+    color: var(--color-principal);
+    display:block;
+    position:absolute;
+    top:25%;
+    left:28%;
+    transition: 300ms ease-in-out;
+
+ }
+
+/* se cambia de icono fa bars al icono  fa-xmark */
+    .fa-bars{
+        opacity:1;
+        
+        
+
+    }
+
+    .fa-xmark{
+        opacity: 0;
+    }
+ 
+    .layout__aside{
+        z-index: 999;
+        display: block;
+        position: absolute;
+        max-width: 330px;
+        top:0;
+        right:0;
+        bottom: 0;
+        text-align: center;
+        overflow: auto;
+        border-radius: 0;
+        transition: all 300ms ease-in-out;
+        margin-right: -100%;
+        opacity:0;
+    }
+
+   
+
+    .layout__content{
+        border-radius:0;
+        background-color: transparent;
+        height: 100%;
+        width:100%;
+    }
+
+    .user-info__container-image{
+        width: 13 rem;
+        margin-top:3rem;
+        font-display: inline-block;
+
+    }
+
+    .user-info__name{
+        font-size: 3rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .layout__menu{
+        position: static;
+        margin: 3rem 0;
+    }
+
+
+}
